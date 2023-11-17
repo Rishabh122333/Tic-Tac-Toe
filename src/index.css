@@ -357,3 +357,85 @@ ol {
     transform: scale(1);
   }
 }
+@media screen and (max-width: 768px) {
+  body {
+    min-height: auto; 
+  }
+
+  #game-container {
+    max-width: 90%; 
+    padding: 1rem;
+  }
+
+  #game-board button {
+    width: 6rem;
+    height: 6rem;
+    font-size: 3rem;
+    padding: 0.5rem;
+  }
+  #game-over {
+    font-size: 1.5rem;
+  }
+  #log {
+    font-size: 1.2rem;
+  }
+
+  #logHeading {
+    font-size: 2rem;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  #game-container {
+    padding: 0.5rem; 
+  }
+
+  #game-board button {
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem;
+    padding: 0.3rem;
+  }
+  #game-over {
+    font-size: 1.2rem;
+  }
+  #log {
+    font-size: 1rem;
+  }
+
+  #logHeading {
+    font-size: 1.5rem;
+  }
+  .player-name input[type="text"] {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .player-name {
+    display: flex;
+    align-items: center;
+  }
+
+  .player-name .player-symbol {
+    margin-left: 0.5rem;
+  }
+
+  .player button {
+    margin-top: 0.5rem;
+  }
+  #game-board .player:last-child {
+    flex-basis: 100%; 
+  }
+  #game-board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #game-board .player {
+    flex: 0 0 100%; 
+    margin-bottom: 1rem; 
+  }
+}
